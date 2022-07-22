@@ -37,7 +37,7 @@ app.post("/", function(req, res){
     const url = "https://us9.api.mailchimp.com/3.0/lists/7756e53e1c";
     const options = {
         method: "POST",
-        auth: "Susan:ea5de5516521e9ae91aa1d562bb67bde-us9"
+        auth: "Susan:785dd868945a8056d2722ea5a3ff338f-us9"
     }
 
     const request = https.request(url, options, function(response){
@@ -62,7 +62,7 @@ app.post("/", function(req, res){
 
 app.post("/failure", function(req, res){
     res.redirect("/");
-})
+});
 
 
 
@@ -72,7 +72,7 @@ app.listen( process.env.PORT || 3000, function(){
 
 
 //API KEY
-//ea5de5516521e9ae91aa1d562bb67bde-us9
+//785dd868945a8056d2722ea5a3ff338f-us9
 
 
 //Audience key
